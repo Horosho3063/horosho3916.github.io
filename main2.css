@@ -1,0 +1,328 @@
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Faster One', sans-serif;
+    color: #000;
+    background-color:#EBC76C;
+}/*----------------------------------------------------------------------------------------------*/
+.logo {
+    margin-top: 20px;
+    width: 55px;
+    height: 55px;
+    margin-right: 320px;
+}
+.brand-name {
+    font-family: 'Faster One', sans-serif;
+    font-size: 60px;
+    width: 385px;
+    height: 60px;
+    margin-right: 350px; /* еще 9 пикселя в запасе*/
+}
+.menu {
+    width: 43px;
+    height: 47px;
+    cursor: pointer; /* делает курсор в виде указателя при наведении*/
+    transition: all 0.3s ease; /* плавное изменение стиля */
+}
+.menu:hover {
+    border: 3px solid #18FFE0; /* бирюзовая рамка */ background-color: #18FFE0; /* бирюзовый цвет фона */
+}
+/*----------------------------------------------------------------------------------------------*/
+.menu-overlay {
+    display: none; /* Скрыто по умолчанию */
+    background-color: #703e13; /* Фон меню */
+    width: 1170px; /* Ширина, как у .container */
+    display: flex; /* Включаем Flexbox */
+    align-items: center; /* Выравнивание элементов по центру по горизонтали */
+    padding: 30px 0; /* Вертикальные отступы для всего контейнера */
+}
+.menu-overlay a {
+    color: black; /* Цвет ссылок до наведения */
+    text-decoration: none; /* Удаление подчеркивания */
+    font-size: 25px;
+    margin: 0px 90px; /* Отступы сверху, снизу и 90px между ссылками по горизонтали */
+}
+.menu-overlay a:hover {
+    color: #18FFE0; /* Цвет при наведении */
+}
+/*----------------------------------------------------------------------------------------------*/
+.line1 {
+    margin-top: 15px;
+    width: 1170;
+    border-bottom: 5px solid black;
+}
+.back-link {
+    margin-top: 20px; /* Можно изменить в соответствии с вашими предпочтениями */
+    margin-bottom: 20px;
+    font-family: 'BioRhyme', serif; /* Используем шрифт BioRhyme */
+    font-size: 25px; /* Размер шрифта для основного текста */
+}
+.back-link span {
+    font-weight: bold; /* Жирный текст для Orders */
+    font-size: 30px;
+}
+.back-link a {
+    text-decoration: none;
+    color: black;
+}.back-link a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении курсора */
+    color: #703e13; /* Цвет при наведении */
+}
+
+
+table {
+    width: 1170px;
+    font-family: 'BioRhyme', serif;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #000;
+    border: 16px solid #000;
+    border-radius: 10px;
+    margin-bottom: 150px;
+}
+
+th {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+td {
+    background: #18FFE0;
+    padding: 10px;
+    color: #000;
+}
+.confirm-btn, .delete-btn {
+    padding: 5px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid black;
+    background: #18FFE0;
+}
+.confirm-btn:hover {
+    background: black;
+    color: #18FFE0;
+}
+.confirm-btn:active {
+    transform: translateY(2px);
+}
+.delete-btn:hover {
+    background: black;
+    color: #18FFE0;
+}
+.delete-btn:active {
+    transform: translateY(2px);
+}
+
+
+
+
+
+
+
+.container_two {
+    font-family: 'BioRhyme', serif; /* Используем шрифт BioRhyme */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    width: 1170px;
+    padding: 60px 60px 80px;
+    background: black;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.data__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 35px;
+    margin-top: 55px;
+}
+input {
+    background: transparent;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding-left: 20px;
+    font-size: 25px;
+    color: #fff;
+}
+input::placeholder {
+    font-size: 25px;
+    color: gray;
+}
+input:focus::placeholder {
+    color: #18FFE0;
+}
+input:focus {
+    outline: none;
+}
+.name {
+    width: calc(100% - 20px); /* Уменьшение ширины на 40px */
+}
+.mail {
+    width: calc(50% - 125px); /* Установление равной ширины */
+    margin-right: 200px; /* Добавление отступа справа */
+    margin-top: 20px;
+}
+.phone {
+    width: calc(50% - 125px); /* Установление равной ширины */
+    margin-top: 20px;
+
+}
+.text__area {
+    margin-top: 65px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.message {
+    font-size: 25px;
+    color: #fff;
+}
+textarea {
+    margin-top: 10px;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    color: #fff;
+}
+textarea:focus::placeholder {
+    color: #18FFE0;
+}
+.send {
+    width: 100%;
+    text-align: right;
+}
+.submit-btn {
+    width: 1050px;
+    padding: 15px 50px;
+    margin-top: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #18FFE0;
+    border-radius: 5px;
+    border: 2px solid #18FFE0;
+    background: #000;
+}
+.submit-btn:hover {
+    background: #18FFE0;
+    color: #000;
+}
+.submit-btn:active {
+    transform: translateY(2px);
+}
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------*/
+.arrow {
+    width: 42px;
+    height: 42px;
+    background: url('img/arrow.png') center center no-repeat;
+    margin-top: 150px;
+    margin-bottom: 11px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer; /* Делаем курсор указателем при наведении, чтобы показать, что это ссылка */
+    transition: all 0.3s ease; /* Добавляем плавное изменение при изменении стиля */
+}
+.arrow:hover {
+    border: 3px solid #18FFE0; /* Бирюзовая рамка */
+    background-color: #18FFE0; /* Бирюзовый цвет фона */
+}
+.line_f1 {
+    width: 1170;
+    border-bottom: 5px solid black;
+}
+.footer-text {
+    font-family: 'Faster One', sans-serif;
+    font-size: 45px; /* Укажите нужный размер шрифта */
+    color: #000; /* Цвет текста */
+    width: 260px;
+    height: 42px;
+    line-height: 42px; /* Высота строки равна высоте блока для вертикального центрирования текста */
+    padding-top: 11px;
+    padding-left: 460px;
+    padding-bottom: 11px;
+}
+.line_f2 {
+    width: 1170;
+    border-bottom: 5px solid black;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+    margin-left: 41px; /* Отступ слева */
+    margin-bottom: 55px;
+}
+.f-background-g {
+    width: 429px;
+    height: 31px;
+    background-color: #703e13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-gmail {
+    color: white; /* Цвет текста для контраста */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ширина текста внутри фона */
+    height: 100%; /* Высота текста внутри фона */
+    font-family: 'BioRhyme', sans-serif;
+}
+.footer-logo {
+    width: 54px;
+    height: 55px;
+    margin-left: 88px; /* Отступ слева */
+}
+.f-background-p {
+    width: 429px;
+    height: 31px;
+    background-color: /* #B97A41*/ #703e13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 88px; /* Отступ слева от логотипа */
+}
+.f-phone {
+    color: white; /* Цвет текста для контраста */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ширина текста внутри фона */
+    height: 100%; /* Высота текста внутри фона */
+    font-family: 'BioRhyme', sans-serif;
+}
+.copy {
+    color: #000; /* Цвет текста */
+    font-family: 'Faster One', sans-serif;
+    font-size: 17px; /* Размер шрифта */
+    margin-left: 375px; /* Отступ слева */
+    margin-bottom: 15px; /* Отступ снизу */
+}
