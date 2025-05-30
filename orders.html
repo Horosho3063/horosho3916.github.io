@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro_Cars/orders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Faster+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main2.css">
+    <link rel="icon" href="img/Logo-48x48.png" type="image/png">
+</head>
+<body>
+    <header id="header" class="header gradient-bg">
+        <div class="container">
+            <div class="menu_group">
+                <img src="img/logo.PNG" alt="logo" class="logo">
+                <span class="brand-name">RetroCars</span>
+                <img src="img/menu.png" alt="menu" class="menu">
+                <div class="line1"></div>
+            </div>
+            <div class="header-content">
+                <div class="menu-overlay" style="display: none;"> <!-- Скрыть пока не будет нажато на меню -->
+                    <a href="index.html#info">Info</a>
+                    <a href="orders.html">Orders</a>
+                    <a href="/catalog">Catalog</a>
+                    <a href="#footer">About Us</a>
+                </div>
+            </div>
+            <!-- Добавляем ссылку для перехода обратно на index.html -->
+            <div class="back-link">
+                <a href="index.html">RetroCars</a>  /  <span>Orders</span>
+            </div>            
+        </div>
+    </header>
+
+    <section id="tables">
+        <div class="container">
+            <table>
+                <tr>
+                    <th>№</th>
+                    <th>Марка</th>
+                    <th>Модель</th>
+                    <th>Дата заказа</th>
+                    <th>Цена $</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Toyota</td>
+                    <td>Camry</td>
+                    <td>2024-05-01</td>
+                    <td>25.000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>BMW</td>
+                    <td>3 Series</td>
+                    <td>2024-05-02</td>
+                    <td>45.000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Honda</td>
+                    <td>Civic</td>
+                    <td>2024-05-03</td>
+                    <td>22.000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ford</td>
+                    <td>Mustang</td>
+                    <td>2024-05-04</td>
+                    <td>35.000</td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align: right;">Итого:</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center;">
+                        <button type="button" class="delete-btn">Удалить всё</button>
+                    </td>
+                </tr>
+            </table>
+            <div class="container_two">
+                <div class="form">
+                    <h1>Есть вопросы? Задавайте.</h1>
+                    <div class="data_block">
+                        <input type="text" class="name" placeholder="Имя">
+                        <input type="text" class="mail" placeholder="E-mail">
+                        <input type="text" class="phone" placeholder="Телефон">
+                    </div>
+                    <div class="text__area">
+                        <p class="message">Message</p>
+                        <textarea rows="5" placeholder="Напишите своё сообщение..."></textarea>
+                    </div>
+                    <div class="send">
+                        <button class="submit-btn" onclick="validateForm()">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+
+
+    <footer id="footer">
+        <div class="container">
+            <a href="#header">
+                <div class="arrow"></div>
+            </a>
+            <div class="line_f1"></div>
+            <div class="footer-text">About Us</div>
+            <div class="line_f2"></div>
+            <div class="footer-content">
+                <div class="f-background-g">
+                    <div class="f-gmail">retrocars@gmail.com</div>
+                </div>
+                <img src="img/logo.PNG" alt="logo" class="footer-logo">
+                <div class="f-background-p">
+                    <div class="f-phone">+7-880-0777-000</div>
+                </div>
+            </div>
+            <div class="copy">&copy; 2024 RetroCars. All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
